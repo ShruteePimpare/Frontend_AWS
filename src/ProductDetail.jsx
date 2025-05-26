@@ -5,7 +5,7 @@ const ProductDetail = ({ productId }) => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch(`https://x9rhjwh9yl.execute-api.ap-south-1.amazonaws.com/prod/products/${productId}`)
+    fetch(`https://zzswrfcjsi.execute-api.us-east-1.amazonaws.com/prod/products/${productId}`)
       .then(res => {
         if (!res.ok) throw new Error('Product fetch failed');
         return res.json();

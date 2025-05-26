@@ -4,7 +4,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://x9rhjwh9yl.execute-api.ap-south-1.amazonaws.com/prod/products')
+    fetch('https://zzswrfcjsi.execute-api.us-east-1.amazonaws.com/prod/products')
       .then(async (res) => {
         if (!res.ok) {
           const text = await res.text();
